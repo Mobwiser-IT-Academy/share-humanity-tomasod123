@@ -1,11 +1,16 @@
 .flex-container {
   display: flex;
-  background-color: DodgerBlue;
+  background-color: orange;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.flex-container > div {
+.flex-container > table {
   background-color: #f1f1f1;
   margin: 10px;
   padding: 20px;
   font-size: 30px;
+}
+
+#bold_headings {
+  font-weight: bold;
 }
