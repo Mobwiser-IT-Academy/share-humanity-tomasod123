@@ -1,3 +1,23 @@
+.issue-container {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: space-around;
+}
+
+.issue-container div {
+  border: orange 1px solid;
+  padding: 0px;
+}
+
+.jumbotron {
+  margin-bottom: 0px !important;
+}
+
+.entire-issue {
+  margin-bottom: 40px;
+}
+
+/*
 .container-1,
 .container-2,
 .container-3 {
@@ -5,20 +25,30 @@
   font-family: Arial, Helvetica, sans-serif;
   justify-content: space-around;
 }
-
 .container-1 div {
   border: orange 1px solid;
   padding: 10px;
 }
 
+.container-2 div {
+  border: orange 1px solid;
+  padding: 10px;
+}
+
+.container-3 div {
+  border: orange 1px solid;
+  padding: 10px;
+}
+
 .box-1 {
-  width: 30%;
+  width: 50%;
 }
 
 .box-2 {
-  width: 30%;
+  width: 25%;
 }
 
 .box-3 {
-  width: 30%;
+  width: 25%;
 }
+ */

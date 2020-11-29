@@ -5,9 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Humanitarian Project-Tomas</title>
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"><script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </head>
   <body>
     <h1>Top 3 Most Severe Humanitarian Crises Globally</h1>
+
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://opensocietyfoundations.imgix.net/uploads/79ef2edf-5eea-422a-8282-f057467d192b/20180725-waguih-yemen-hodeidah-food-3000.jpg?auto=compress%2Cformat&fit=min&fm=jpg&q=80&rect=%2C%2C%2C&w=1140" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://cdnuploads.aa.com.tr/uploads/Contents/2020/06/03/thumbs_b_c_46e6e3c543aa05442273d44bc413d45d.jpg?v=182530" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://cms.qz.com/wp-content/uploads/2018/01/rtx4gq0o-e1516775413578.jpg?quality=75&strip=all&w=1600&h=900&crop=1" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+
+
       <h4>
         "Humanitarian"-concerned with or seeking to promote human welfare.
         "Humanitarian Crisis" (or "humanitarian disaster"):
@@ -17,6 +45,41 @@
         Humanitarian crises can either be natural disasters, man-made disasters or
         complex emergencies.
       </h4>
+
+
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+
+
+
     <div class="flex-container">
       
               <h2>Global Humanitarian Crises <br></h2>
@@ -34,7 +97,9 @@
               <td>1</td>
               <td>Yemen</td>
               <td>24,000,000</td>
-              <td><a href="detail.html">More Info</a></td>
+              <td>
+                <a class="btn btn-primary" href="detail.html" role="button">More Info</a>
+               </td>
             </tr>
             <tr>
               <td>Syrian Civil War</td>
@@ -56,5 +121,6 @@
       </div>
       
     </div>
+    
   </body>
 </html>
