@@ -103,8 +103,8 @@ html {
 }
 
 body {
-  background-color: orange !important;
-  /* display: flex; */
+  background-color: orange;
+  //display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
@@ -119,7 +119,6 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin: 0px auto;
   text-transform: uppercase;
 }
 
@@ -132,12 +131,7 @@ body {
 
 .pricing-img {
   margin-bottom: 25px;
-  /* width: 100%; */
-  width: 250px;
-  height: 300px;
-  margin: 0px auto;
-}
-.container-panel {
+  width: 100%;
 }
 
 .pricing-header {
