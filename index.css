@@ -103,15 +103,48 @@ html {
 }
 
 body {
+<<<<<<< Updated upstream
   background-color: orange !important;
+=======
+  background-color: white !important;
+>>>>>>> Stashed changes
   /* display: flex; */
   justify-content: center;
   align-items: center;
   min-height: 100vh;
 }
 
+<<<<<<< Updated upstream
 .panel {
   background-color: white;
+=======
+.header {
+  color: #033fa2;
+  text-align: center;
+  line-height: 2rem;
+  list-style-type: none;
+}
+
+.header h1 {
+  color: ##022661;
+}
+
+.header img {
+  height: 150px;
+  width: 150px;
+  margin: 25px auto;
+  margin-top: 30px;
+}
+
+.header img:hover {
+  width: 200px;
+  height: 200px;
+  transition: 500ms ease-in-out;
+}
+
+.panel {
+  background-color: #c9ddfe;
+>>>>>>> Stashed changes
   border-radius: 10px;
   padding: 15px 25px;
   width: 100%;
@@ -137,8 +170,11 @@ body {
   height: 300px;
   margin: 0px auto;
 }
+<<<<<<< Updated upstream
 .container-panel {
 }
+=======
+>>>>>>> Stashed changes
 
 .pricing-header {
   color: #888;
