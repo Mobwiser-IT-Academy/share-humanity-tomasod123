@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Humanitarian Project-Tomas</title>
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="/css/index.css" />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -79,9 +79,11 @@
       </div>
     -->
     <br />
+
+    <% issues.forEach(function(issue){ %> <% if (issue.category === "social"){%>
+
     <div class="container-panel">
       <div class="panel pricing-table">
-        <% issues.forEach(function(issue){ %>
         <div class="pricing-plan">
           <img
             src="/Users/tomasodwyer/development/mobwiser/Humanitarian Project/landing-page-icons/elements-20-military-icons-FLE558-2017-02-16/SVG/mask.svg"
@@ -92,15 +94,15 @@
           <ul class="pricing-features">
             <li class="pricing-features-item">Rank: <%= issue.rank %></li>
             <li class="pricing-features-item">
-              Location:<%= issue.location %>
+              Location: <%= issue.location %>
             </li>
           </ul>
           <span class="pricing-price"><%= issue.peopleAffected %></span>
           <a href="detail.html" class="pricing-button">More Info</a>
         </div>
-        <% }); %>
       </div>
     </div>
+    <%}%> <% }); %>
 
     <script src="script.js"></script>
   </body>
