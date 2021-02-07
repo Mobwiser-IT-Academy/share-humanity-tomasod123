@@ -1,3 +1,24 @@
+/* .container-table {
+  background-color: orange;
+} */
+
+/* .flex-container {
+  display: flex;
+  background-color: orange;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-container > table {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+
+#bold_headings {
+  font-weight: bold;
+} */
+/* Box sizing rules */
 *,
 *::before,
 *::after {

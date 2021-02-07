@@ -1,62 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Humanitarian Project-Tomas</title>
-    <link rel="stylesheet" href="/css/index.css" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700"
-    />
-  </head>
-  <body>
-    <div class="header">
-      <h1 class="header-title">
-        Top 3 Most Severe Humanitarian Crises Globally
-      </h1>
 
-      <img src="earth-icon-mobwiser.png" alt="earth icon" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Humanitarian Project-Tomas</title>
+  <link rel="stylesheet" type="text/css" href="/css/index.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" />
+</head>
 
-      <ul>
-        <li>
-          <strong>"Humanitarian":</strong> Concerned with or seeking to promote
-          human welfare.
-        </li>
-        <li>
-          <strong>"Humanitarian Crisis":</strong> A singular event or a series
-          of events that are threatening in terms of health, safety or
-          well-being of a community or large group of people.
-        </li>
-        <li>
-          Humanitarian crises can either be natural disasters, man-made
-          disasters or complex emergencies.
-        </li>
-      </ul>
-    </div>
+<body>
+  <div class="header">
+    <h1 class="header-title">
+      Top 3 Most Severe Humanitarian Crises Globally
+    </h1>
 
-    <!-- <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+    <img src="earth-icon-mobwiser.png" alt="earth icon" />
+
+    <form onchange="return makeHTML(this.value)" onsubmit="return false;">
+      <select id="my-select">
+        <option value="all" selected>All</option>
+        <option value="health">Health</option>
+        <option value="social">Social</option>
+      </select>
+    </form>
+
+    <ul>
+      <li>
+        <strong>"Humanitarian":</strong> Concerned with or seeking to promote
+        human welfare.
+      </li>
+      <li>
+        <strong>"Humanitarian Crisis":</strong> A singular event or a series
+        of events that are threatening in terms of health, safety or
+        well-being of a community or large group of people.
+      </li>
+      <li>
+        Humanitarian crises can either be natural disasters, man-made
+        disasters or complex emergencies.
+      </li>
+    </ul>
+  </div>
+
+  <!-- <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="https://opensocietyfoundations.imgix.net/uploads/79ef2edf-5eea-422a-8282-f057467d192b/20180725-waguih-yemen-hodeidah-food-3000.jpg?auto=compress%2Cformat&fit=min&fm=jpg&q=80&rect=%2C%2C%2C&w=1140" class="d-block w-100" alt="...">
@@ -78,32 +75,13 @@
         </a>
       </div>
     -->
-    <br />
+  <br />
 
-    <% issues.forEach(function(issue){ %> <% if (issue.category === "social"){%>
+  <div id="issue-box">
 
-    <div class="container-panel">
-      <div class="panel pricing-table">
-        <div class="pricing-plan">
-          <img
-            src="/Users/tomasodwyer/development/mobwiser/Humanitarian Project/landing-page-icons/elements-20-military-icons-FLE558-2017-02-16/SVG/mask.svg"
-            alt=""
-            class="pricing-img"
-          />
-          <h2 class="pricing-header"><%= issue.title %></h2>
-          <ul class="pricing-features">
-            <li class="pricing-features-item">Rank: <%= issue.rank %></li>
-            <li class="pricing-features-item">
-              Location: <%= issue.location %>
-            </li>
-          </ul>
-          <span class="pricing-price"><%= issue.peopleAffected %></span>
-          <a href="detail.html" class="pricing-button">More Info</a>
-        </div>
-      </div>
-    </div>
-    <%}%> <% }); %>
+  </div>
+  <script src="/js/issues.js"></script>
+  <script src="/js/script.js"></script>
+</body>
 
-    <script src="script.js"></script>
-  </body>
 </html>
